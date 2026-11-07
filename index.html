@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little World For You</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="background-glow"></div>
+    <div class="stars" id="stars"></div>
+
+
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <div class="logo">For You ♡</div>
+
+        <div class="nav-links">
+            <button class="nav-btn active" data-page="home">Home</button>
+            <button class="nav-btn" data-page="birthday">Birthday</button>
+            <button class="nav-btn" data-page="wishes">Wishes</button>
+            <button class="nav-btn" data-page="letter">Letter</button>
+            <button class="nav-btn" data-page="teasing">Trouble ♡</button>
+        </div>
+
+    </nav>
+
+
+    <!-- PAGE 1: HOME -->
+    <main>
+
+        <section class="page active" id="home">
+
+            <div class="hero glass-card">
+
+                <div class="small-label">
+                    ✦ A LITTLE SOMETHING SPECIAL ✦
+                </div>
+
+               <h1>
+    A World Made<br>
+    <span>Just For Amna</span>
+</h1>
+
+                <div class="urdu hero-urdu">
+                    کچھ لوگ زندگی میں خاص ہوتے ہیں،
+                    اور کچھ لوگ زندگی کو خاص بنا دیتے ہیں۔
+                </div>
+
+                <p class="hero-description">
+                    Today, this little corner of the internet
+                    belongs entirely to you.
+                </p>
+                <div class="birthday-date">
+    08 · 08 · 2010
+</div>
+
+                <button class="main-btn" onclick="goToPage('birthday')">
+                    Begin Your Surprise <span>→</span>
+                </button>
+
+                <div class="hero-decoration">♡</div>
+
+            </div>
+            <div class="creator-signature">
+    <span>Created with love & care by</span>
+    <h3>HASSAN MALIK</h3>
+    <p>Especially for Amna ♡</p>
+</div>
+
+        </section>
+
+
+        <!-- PAGE 2: BIRTHDAY -->
+        <section class="page" id="birthday">
+
+            <div class="section-heading">
+
+                <div class="small-label">✦ YOUR SPECIAL DAY ✦</div>
+
+                <h2>Happy Birthday, Amna</h2>
+
+                <p class="urdu">
+                    آج کا دن صرف ایک تاریخ نہیں،
+                    بلکہ ایک خوبصورت وجود کی خوشی ہے۔
+                </p>
+
+            </div>
+
+
+            <div class="cake-card glass-card">
+
+                <div class="cake-container">
+
+                    <div class="candle-area">
+
+                        <div class="candle">
+                            <div class="flame"></div>
+                            <div class="wick"></div>
+                        </div>
+
+                        <div class="candle candle-two">
+                            <div class="flame"></div>
+                            <div class="wick"></div>
+                        </div>
+
+                        <div class="candle candle-three">
+                            <div class="flame"></div>
+                            <div class="wick"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="cake-top"></div>
+                    <div class="cake-middle"></div>
+                    <div class="cake-bottom"></div>
+
+                </div>
+
+                <h3>Make A Wish ✨</h3>
+
+                <p class="urdu">
+                    اپنی آنکھیں بند کریں، ایک خوبصورت خواہش مانگیں۔
+                </p>
+
+                <button class="main-btn" id="blowButton">
+                    Blow The Candles 🕯
+                </button>
+
+                <p id="wishMessage" class="urdu wish-message">
+                </p>
+
+            </div>
+
+            <button class="text-btn" onclick="goToPage('wishes')">
+                There's more for you →
+            </button>
+
+        </section>
+
+
+        <!-- PAGE 3: WISHES -->
+        <section class="page" id="wishes">
+
+            <div class="section-heading">
+
+                <div class="small-label">✦ WORDS FROM THE HEART ✦</div>
+
+                <h2>My Wishes For You</h2>
+
+                <p class="urdu">
+                    کچھ دعائیں لفظوں سے کہیں زیادہ خوبصورت ہوتی ہیں۔
+                </p>
+
+            </div>
+
+
+            <div class="wishes-grid">
+
+                <div class="wish-card glass-card">
+                    <span class="wish-icon">✧</span>
+
+                    <h3>Happiness</h3>
+
+                    <p class="urdu">
+                        دعا ہے کہ آپ کی زندگی خوشیوں سے بھری رہے،
+                        اور آپ کے چہرے کی مسکراہٹ ہمیشہ قائم رہے۔
+                    </p>
+                </div>
+
+
+                <div class="wish-card glass-card">
+                    <span class="wish-icon">♡</span>
+
+                    <h3>Peace</h3>
+
+                    <p class="urdu">
+                        اللہ آپ کے دل کو سکون، زندگی کو آسانیاں
+                        اور ہر مشکل کے بعد خوبصورت راستے عطا فرمائے۔
+                    </p>
+                </div>
+
+
+                <div class="wish-card glass-card">
+                    <span class="wish-icon">✦</span>
+
+                    <h3>Success</h3>
+
+                    <p class="urdu">
+                        آپ کے ہر اچھے خواب کو تعبیر ملے،
+                        اور آپ کو وہ سب کچھ نصیب ہو جو آپ کے حق میں بہتر ہے۔
+                    </p>
+                </div>
+
+
+                <div class="wish-card glass-card">
+                    <span class="wish-icon">❀</span>
+
+                    <h3>Beautiful Days</h3>
+
+                    <p class="urdu">
+                        آنے والا ہر سال آپ کے لیے پہلے سے زیادہ
+                        خوبصورت، پُرسکون اور یادگار ہو۔
+                    </p>
+                </div>
+
+            </div>
+
+            <button class="main-btn" onclick="goToPage('letter')">
+                One Last Thing ♡
+            </button>
+
+        </section>
+
+
+        <!-- PAGE 4: LETTER -->
+        <section class="page" id="letter">
+
+            <div class="section-heading">
+
+                <div class="small-label">✦ SOMETHING PERSONAL ✦</div>
+
+                <h3>Dear Amna,</h3>
+
+            </div>
+
+
+            <div class="letter-card glass-card">
+
+                <div class="letter-decoration">♡</div>
+
+                <h3>Dear You,</h3>
+
+                <div class="urdu letter-content">
+
+                    آج آپ کا دن ہے، اور میں چاہتا ہوں کہ
+                    آپ کو یہ احساس ہو کہ آپ کتنی خاص ہیں۔
+
+                    <br><br>
+
+                    زندگی میں کچھ لوگ اپنی موجودگی سے
+                    ہر چیز کو خوبصورت بنا دیتے ہیں۔
+                    آپ بھی انہی لوگوں میں سے ایک ہیں۔
+
+                    <br><br>
+
+                    میری دعا ہے کہ آپ ہمیشہ مسکراتی رہیں،
+                    آپ کی ہر جائز خواہش پوری ہو،
+                    اور اللہ آپ کو دنیا و آخرت کی تمام بھلائیاں عطا فرمائے۔
+
+                    <br><br>
+
+                    آپ کے لیے ہمیشہ بہت سی دعائیں اور نیک خواہشات۔
+
+                </div>
+
+                <div class="letter-footer">
+                    With lots of good wishes ♡
+                </div>
+
+            </div>
+
+
+            <div class="final-message">
+
+                <h2>Stay Beautiful. Stay You.</h2>
+
+                <p class="urdu">
+                    سالگرہ مبارک ہو!
+                    اللہ آپ کے نصیب ہمیشہ روشن رکھے۔
+                </p>
+
+                <span>Made with ♡, just for you.</span>
+
+            </div>
+            <div class="personal-signature">
+    <p class="urdu">یہ چھوٹی سی کوشش ایک خاص انسان کے لیے۔</p>
+    <span>With warm wishes,</span>
+    <h2>Hassan Malik ♡</h2>
+</div>
+            
+<!-- SECRET ENVELOPE -->
+
+<div class="secret-section">
+
+    <div class="small-label">✦ A SECRET MESSAGE ✦</div>
+
+    <h2>One Last Secret...</h2>
+
+    <p class="urdu">
+        آپ کے لیے ایک چھوٹا سا پیغام چھپا رکھا ہے۔
+    </p>
+
+    <div class="envelope-wrapper" id="envelopeWrapper">
+
+        <div class="envelope">
+
+            <div class="envelope-back"></div>
+
+            <div class="envelope-letter" id="secretLetter">
+
+                <span class="letter-heart">♡</span>
+
+                <h3>A Secret For Amna</h3>
+
+                <p class="urdu">
+                    امنا، شاید آپ کو اندازہ نہ ہو
+                    کہ آپ کتنی خاص ہیں۔
+
+                    <br><br>
+
+                    میری دعا ہے کہ آپ کی زندگی میں
+                    ہمیشہ خوشیاں، کامیابیاں اور سکون رہے۔
+
+                    <br><br>
+
+                    کبھی اپنی اہمیت مت بھولیے گا۔
+                    آپ بہت قیمتی ہیں۔ ♡
+                </p>
+
+            </div>
+
+            <div class="envelope-front"></div>
+
+            <div class="envelope-flap"></div>
+
+            <div class="wax-seal">♡</div>
+
+        </div>
+
+    </div>
+
+    <button class="envelope-open-btn" id="envelopeButton">
+        Open Your Secret Letter ♡
+    </button>
+
+    <p class="envelope-hint urdu" id="envelopeHint">
+        لفافے پر کلک کریں اور اپنا پیغام پڑھیے۔
+    </p>
+
+</div>
+
+            <div class="trouble-invitation">
+
+    <p class="urdu">
+        اچھا، جانے سے پہلے ایک چھوٹی سی شرارت بھی ہو جائے؟ 🤭
+    </p>
+
+    <button class="trouble-btn" onclick="goToPage('teasing')">
+        Something Is Waiting For You 😈 →
+    </button>
+
+</div>
+
+            <button class="text-btn" onclick="goToPage('home')">
+                ↶ Start Again
+            </button>
+
+        </section>
+        
+
+<!-- PAGE 5: PLAYFUL TEASING -->
+<section class="page" id="teasing">
+
+    <div class="section-heading">
+        <div class="small-label">✦ A LITTLE MISCHIEF ✦</div>
+        <h2>Amna, You're In Trouble!</h2>
+        <p class="urdu">
+            ویسے تو آپ بہت معصوم بنتی ہیں،
+            لیکن حقیقت کچھ اور ہی ہے۔
+        </p>
+    </div>
+
+    <!-- OFFICIAL REPORT -->
+    <div class="tease-card glass-card">
+        <div class="tease-emoji">📋</div>
+        <h3>Official Amna Report</h3>
+        <p class="urdu">
+            نام: امنا
+            <br>عہدہ: معصومیت کی خود ساختہ سفیر
+            <br>خاص مہارت: دوسروں کو تنگ کرکے خود معصوم بن جانا
+            <br>روزانہ کا مشغلہ: نخرے کرنا، ڈرامے کرنا اور پھر مسکرانا
+            <br>مشکوک سرگرمی: ایک بات کو دس بار پوچھنا
+            <br>سب سے بڑا جرم: اپنی شرارتوں سے انکار کرنا
+            <br>ریکارڈ: معصومیت کے دعوے، ثبوت صفر!
+            <br>سفارش کردہ سزا: ساری زندگی خوش رہنا اور خوب ہنستے رہنا۔
+        </p>
+
+        <button class="main-btn" id="reportButtonNew">
+            Reveal Final Verdict 😈
+        </button>
+        <p class="urdu" id="reportResultNew"></p>
+    </div>
+
+    <!-- QUESTION QUIZ -->
+    <div class="tease-card glass-card">
+        <div class="tease-emoji">🤭</div>
+        <h3>Amna's Innocence Test</h3>
+        <p class="urdu">چلیں دیکھتے ہیں آپ کتنی معصوم ہیں!</p>
+
+        <div class="fun-question">
+            <h4>1. اگر آپ کوئی شرارت کریں تو؟</h4>
+            <button class="quiz-option-new" data-comment="A">میں نے کچھ نہیں کیا 😇</button>
+            <button class="quiz-option-new" data-comment="B">سب کی غلطی تھی 🤭</button>
+            <button class="quiz-option-new" data-comment="C">ہاں کی تھی، پھر؟ 😎</button>
+            <p class="urdu question-feedback"></p>
+        </div>
+
+        <div class="fun-question">
+            <h4>2. آپ کا سب سے پسندیدہ کام؟</h4>
+            <button class="quiz-option-new" data-comment="A">لوگوں کو تنگ کرنا 😈</button>
+            <button class="quiz-option-new" data-comment="B">معصوم بننا 😇</button>
+            <button class="quiz-option-new" data-comment="C">دونوں ایک ساتھ 🤌</button>
+            <p class="urdu question-feedback"></p>
+        </div>
+
+        <div class="fun-question">
+            <h4>3. جب کوئی آپ سے ناراض ہو تو؟</h4>
+            <button class="quiz-option-new" data-comment="A">پہلے ہنسوں گی 😂</button>
+            <button class="quiz-option-new" data-comment="B">اچھا جی، ناراض ہیں؟ 😌</button>
+            <button class="quiz-option-new" data-comment="C">فوراً منانے کی کوشش 🤍</button>
+            <p class="urdu question-feedback"></p>
+        </div>
+
+        <div class="fun-question">
+            <h4>4. اپنی معصومیت کا ثبوت دیں؟</h4>
+            <button class="quiz-option-new" data-comment="A">میری شکل دیکھیں 😇</button>
+            <button class="quiz-option-new" data-comment="B">میرے پاس کوئی ثبوت نہیں 🤭</button>
+            <button class="quiz-option-new" data-comment="C">اگلا سوال پلیز 😭</button>
+            <p class="urdu question-feedback"></p>
+        </div>
+
+        <div class="fun-question">
+            <h4>5. اگر آپ کو ایک دن کے لیے ملکہ بنا دیا جائے؟</h4>
+            <button class="quiz-option-new" data-comment="A">سب کو حکم دوں گی 👑</button>
+            <button class="quiz-option-new" data-comment="B">سب سے تحفے لوں گی 🎁</button>
+            <button class="quiz-option-new" data-comment="C">بس کیک اور خوشیاں چاہئیں 🎂</button>
+            <p class="urdu question-feedback"></p>
+        </div>
+    </div>
+
+    <!-- DO YOU LOVE ME GAME -->
+    <div class="tease-card glass-card love-game">
+        <div class="tease-emoji">💗</div>
+        <h3>One Very Important Question...</h3>
+        <h2 class="love-question">Do You Love Me? 👀</h2>
+        <p class="urdu">سوچ سمجھ کر جواب دیجیے گا!</p>
+
+        <div class="love-buttons" id="loveButtonArea">
+            <button class="love-yes" id="loveYes">YES 💗</button>
+            <button class="love-no" id="loveNo">NO 🙄</button>
+        </div>
+
+        <p class="urdu love-result" id="loveResult"></p>
+    </div>
+
+    <!-- RANDOM MISCHIEF -->
+    <div class="tease-card glass-card">
+        <div class="tease-emoji">🎁</div>
+        <h3>Don't Press This Button!</h3>
+        <p class="urdu">اگر ہمت ہے تو بٹن دبا کر دیکھیے۔</p>
+
+        <button class="main-btn" id="mischiefButton">
+            Definitely Don't Click 😈
+        </button>
+        <div class="urdu mischief-result" id="mischiefResult"></div>
+    </div>
+
+    <!-- FORTUNE MESSAGES -->
+    <div class="fortune-section">
+        <div class="small-label">✦ A LITTLE FORTUNE ✦</div>
+        <h2>Your Little Surprise</h2>
+        <p class="urdu">آئیے دیکھتے ہیں آج آپ کے نام کیا پیغام ہے۔</p>
+
+        <div class="fortune-card">
+            <span class="fortune-star">✧</span>
+            <p class="urdu" id="fortuneMessage">
+                آپ کے لیے ایک خوبصورت پیغام چھپا ہے۔
+            </p>
+            <span class="fortune-star">✧</span>
+        </div>
+
+        <button class="fortune-btn" onclick="revealFortune()">
+            Reveal My Message ♡
+        </button>
+    </div>
+
+    <!-- ENDING -->
+    <div class="final-message">
+        <h2>Just Kidding, Amna!</h2>
+        <p class="urdu">
+            مذاق اپنی جگہ، لیکن آپ کی خوشی
+            واقعی بہت اہم ہے۔ ہمیشہ خوش رہیے!
+        </p>
+        <button class="text-btn" onclick="goToPage('letter')">
+            Back to Your Letter ♡
+        </button>
+    </div>
+
+</section>
+
+
+
+    </main>
+    <footer class="site-footer">
+    <p>Designed & Developed by</p>
+    <h3>HASSAN MALIK</h3>
+    <span>A little website, made with a lot of thought. ♡</span>
+</footer>
+
+
+    <footer>
+        A little universe, created just for you ✦
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
